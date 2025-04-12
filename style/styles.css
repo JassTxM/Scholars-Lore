@@ -1,200 +1,75 @@
-/*Feature Cards Section*/
-.features-cards {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 50px 0;
-    height: 50vh;
-    overflow: auto;
-}
-
-.f-card {
-    width: 25%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: 20px;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.f-card i {
-    font-size: 36px;
-    color: #f9c87b;
-}
-
-
-.f-card h3 {
-    color: #1e212e;
-    margin-top: 10px;
-}
-
-.features-cards .card p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #777;
-}
-
-/* Company-Partners Section */
-.company-logos{
-    background-color: #ffffff;
-}
-
-.partner-title{
-    color: #1e212e;
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: bold;
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    overflow: auto;
-    margin-bottom: 70px;
-
-}
-
-.logos img{
-    max-width: 150px;
-    height: 50px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-    margin: 20px;
-}
-
-.logos img:hover {
-    opacity: 1;
-}
-
-/* Course Card Section */
-
-.courses-card-section {
-    text-align: center;
-    padding: 0px 20px;
-    background-color: #ffffff;
-    margin-bottom: 70px;
-}
-
-.card-section-title {
-    color: #1e212e;
-    margin-bottom: 30px;
-}
-
-.courses-card-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.course-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    padding: 20px;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.course-card-thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.course-card-title {
-    color: #1e212e;
-    margin: 10px 0;
-}
-
-
-.view-all-link {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #1e212e;
-    background-color: #f9c87b;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.view-all-link:hover {
-    background-color: #e6b563;
-}
-/* Conclusion Section */
-.conclusion-title{
-    color: #1e212e;
-    display: flex;
-   justify-content: center;
-    margin: 30px 0px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: bold;
-}
-
-.conclusion {
-    margin-top: 70px;
-    text-align: center;
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
-/* Footer */
-footer {
-    background-color: #1e212e;
-    color: white;
-    padding: 40px 0;
-    border-top: 2px solid #f9c87b ;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer h3 {
-    margin-bottom: 20px;
-}
-
-footer ul {
-    list-style: none;
+*{
+    margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-footer ul li {
-    margin-bottom: 10px;
+
+/* Header */
+.nav-bar{
+    background-color: #1e212e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-footer ul li a {
-    color: #f9c87b;
-    text-decoration: none;
-}
-
-.footer-end{
+.logo{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    align-items: end;
+    height: 100%;
 }
 
-.footer-end p{
-    color: #f9c87b;
+.logo a img{
+    padding: 10px;
+    width: 80px;
+    height: 80px;
 }
+
+.logo p{
+    color: #ddd;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    transition: color 0.3s;
+}
+
+.logo p:hover{
+    color: #fff;
+
+}
+
+
+.links{
+    display: flex;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.links a::after{
+    content : "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f9c87b;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+
+}
+
+.links a:hover::after{
+    transform: scale(1);
+}
+
