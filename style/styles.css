@@ -1,0 +1,39 @@
+/*Feature Cards Section*/
+.features-cards {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 50px 0;
+    height: 50vh;
+    overflow: auto;
+}
+
+.f-card {
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-card i {
+    font-size: 36px;
+    color: #f9c87b;
+}
+
+
+.f-card h3 {
+    color: #1e212e;
+    margin-top: 10px;
+}
+
+.features-cards .card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
