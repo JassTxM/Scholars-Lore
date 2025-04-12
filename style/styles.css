@@ -130,3 +130,21 @@
     color: #1e212e;
 }
 
+
+/* Quote Section*/
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100vw; */
+    height: 10vh;
+    background-color: #f9f9f9;
+}
+
+.quote p{
+    color: #1e212e;
+    font-family: "Kings", cursive;
+    font-weight: 500;
+    font-style: bold;
+    font-size: x-large;
+}
