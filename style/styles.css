@@ -148,3 +148,43 @@
     font-style: bold;
     font-size: x-large;
 }
+
+
+/* Billing Section*/
+.billing-title{
+    color: #1e212e;
+    display: flex;
+   justify-content: center;
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: bold;
+}
+
+.see-more{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.see-more a{
+    border-radius: 5px;
+    background-color: #f9c87b;
+    color: #1e212e;
+    margin-bottom: 30px;
+    text-decoration: none;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 171px;
+}
+
+.see-more a:hover {
+    background-color: #e6b563;
+}
+/* All styles in this section are done from BootStrap */
+
