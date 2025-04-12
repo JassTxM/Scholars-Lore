@@ -74,3 +74,68 @@
 .logos img:hover {
     opacity: 1;
 }
+
+/* Course Card Section */
+
+.courses-card-section {
+    text-align: center;
+    padding: 0px 20px;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.card-section-title {
+    color: #1e212e;
+    margin-bottom: 30px;
+}
+
+.courses-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-card-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-card-title {
+    color: #1e212e;
+    margin: 10px 0;
+}
+
+
+.view-all-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1e212e;
+    background-color: #f9c87b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-link:hover {
+    background-color: #e6b563;
+}
