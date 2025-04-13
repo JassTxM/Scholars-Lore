@@ -398,7 +398,19 @@ footer ul li a {
 }
 
 
+/* About Us Page */
 
+
+/* About Image */
+.about-img{
+    background-image: url(/img/about.jpg);
+    background-size: cover;
+    height: 36vw;
+    }
+    
+    
+    
+    /* About Info */
 .about-title{
     text-align: center;
     margin: 30px 0px;
