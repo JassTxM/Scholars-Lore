@@ -571,3 +571,79 @@ footer ul li a {
 .contact-img:hover img {
     filter: blur(0);
 }
+
+.contact-form h1{
+    overflow: hidden;
+    position: relative;
+    width: 538px;
+    font-size: 48px;
+    color: #1e212e;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+.contact-form h2{
+    font-family: "Kings", cursive;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 32px;
+    color: #333;
+}
+
+.contact-form h1::after{
+    content : "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f9c87b;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+
+}
+
+
+.contact-form h1:hover::after{
+    transform: scale(1);
+}
+
+
+.contact-form p {
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin-bottom: 3rem;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 17px;
+    border: 2px solid #1e212e;  
+    outline: none;
+    background: #fff;  
+    color: #1e212e;  
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-form form input:valid,
+.contact-form form textarea:valid {
+    transform: scale(0.98);
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    transform: scale(1.05);
+    border-color: #f9c87b;  
+}
