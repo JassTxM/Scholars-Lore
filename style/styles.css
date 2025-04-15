@@ -593,3 +593,103 @@ footer ul li a {
     color: #fff;         
     border: 2px solid #1e212e;  
 }
+
+
+@media only screen and (max-width: 768px) {
+    
+    .nav-bar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+    .contact {
+        padding: 20px 5%;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form p {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .contact-form h1 {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form p {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+
+    .contact-form h1 {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form p {
+        font-size: 1.1rem;
+        margin-bottom: 3.8rem;
+    }
+
+    .contact-form .btn {
+        width:220px;
+    }
+}
