@@ -545,3 +545,15 @@ footer ul li a {
      }
  }
 
+ .info-head{
+    display: flex;
+    align-items: baseline;
+}
+
+.info-head i{
+    font-size: 30px;
+}
+
+.info-head h3{
+    margin-left: 10px;
+}
