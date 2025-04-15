@@ -545,3 +545,29 @@ footer ul li a {
      }
  }
 
+/* Contact Page */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+
+.contact-img{
+    height: 100%;
+    width: 120%;
+}
+.contact-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.contact-img:hover img {
+    filter: blur(0);
+}
