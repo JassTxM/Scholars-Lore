@@ -951,3 +951,128 @@ footer ul li a {
         width: 90%;
     }
 }
+
+
+/* Bill Page */
+
+.bill-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bill-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e212e;
+    animation: slideInFromTop 1s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+
+.bill-form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.bill-form-group {
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease-in-out forwards;
+}
+
+.bill-form-group:nth-child(1) { animation-delay: 0.2s; }
+.bill-form-group:nth-child(2) { animation-delay: 0.4s; }
+.bill-form-group:nth-child(3) { animation-delay: 0.6s; }
+.bill-form-group:nth-child(4) { animation-delay: 0.8s; }
+.bill-form-group:nth-child(5) { animation-delay: 1s; }
+.bill-form-group:nth-child(6) { animation-delay: 1.2s; }
+
+.bill-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.bill-form-group input,
+.bill-form-group textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.bill-form-group textarea{
+    resize: none;
+}
+
+.bill-form-group input:focus,
+.bill-form-group textarea:focus {
+    border-color: #f9c87b;
+    box-shadow: 0 0 8px rgba(249, 200, 123, 0.8);
+    outline: none;
+}
+
+.bill-submit-button {
+    background-color: #f9c87b;
+    color: #1e212e;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.bill-submit-button:hover {
+    background-color: #dba55d;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bill-container {
+        padding: 10px;
+    }
+
+    .bill-title {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
