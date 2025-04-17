@@ -821,3 +821,67 @@ footer ul li a {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
+
+
+.bill-form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.bill-form-group {
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease-in-out forwards;
+}
+
+.bill-form-group:nth-child(1) { animation-delay: 0.2s; }
+.bill-form-group:nth-child(2) { animation-delay: 0.4s; }
+.bill-form-group:nth-child(3) { animation-delay: 0.6s; }
+.bill-form-group:nth-child(4) { animation-delay: 0.8s; }
+.bill-form-group:nth-child(5) { animation-delay: 1s; }
+.bill-form-group:nth-child(6) { animation-delay: 1.2s; }
+
+.bill-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.bill-form-group input,
+.bill-form-group textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.bill-form-group textarea{
+    resize: none;
+}
+
+.bill-form-group input:focus,
+.bill-form-group textarea:focus {
+    border-color: #f9c87b;
+    box-shadow: 0 0 8px rgba(249, 200, 123, 0.8);
+    outline: none;
+}
+
+.bill-submit-button {
+    background-color: #f9c87b;
+    color: #1e212e;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.bill-submit-button:hover {
+    background-color: #dba55d;
+}
