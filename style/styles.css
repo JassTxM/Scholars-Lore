@@ -907,3 +907,18 @@ footer ul li a {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bill-container {
+        padding: 10px;
+    }
+
+    .bill-title {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
