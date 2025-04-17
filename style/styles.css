@@ -920,3 +920,34 @@ footer ul li a {
     background: #dfb56a;
 }
 
+.black-card {
+    border: 3px solid #f9c87b;
+    background: #1e212e;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.black-card h2 {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .plans-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plan-card {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .plan-card {
+        width: 90%;
+    }
+}
