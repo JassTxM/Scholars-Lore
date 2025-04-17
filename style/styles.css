@@ -920,15 +920,3 @@ footer ul li a {
     background: #dfb56a;
 }
 
-.plan-card {
-    border: 3px solid #f9c87b;
-    background: #1e212e;
-    color: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.plan-card h2 {
-    color: #ffffff;
-    text-decoration: underline;
-    text-decoration-color: #ffffff;
-}
