@@ -797,3 +797,138 @@ footer ul li a {
         width:220px;
     }
 }
+
+/* Plans Page */
+
+.plans-container {
+    max-width: 95%;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plans-title {
+
+    font-size: 2.5rem;
+    color: #1e212e;
+    overflow: hidden;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+
+.plans-title::after{
+    content : "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f9c87b;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+
+}
+
+
+.plans-title:hover::after{
+    transform: scale(1);
+}
+
+.plan-subtitle{
+    color: #1e212e;
+    font-family: "Kings", cursive;
+    font-weight: 500;
+    font-style: bold;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+
+
+.plans-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+/* Plan Card Design */
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 15px;
+    width: 24%;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #1e212e;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card h2 {
+    font-size: 1.8rem;
+    color: #f9c87b;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.plan-card .price {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    margin: 10px 0px 30px 0px;
+}
+
+.plan-card .features {
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.plan-card .features li {
+    margin: 5px 0;
+}
+
+.plan-card .btn {
+    background-color: #f9c87b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.plan-card .btn a{
+    color: #1e212e;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.plan-card .btn:hover {
+    background: #dfb56a;
+}
+
+.plan-card {
+    border: 3px solid #f9c87b;
+    background: #1e212e;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.plan-card h2 {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
