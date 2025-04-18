@@ -1118,3 +1118,44 @@ footer ul li a {
     transform: scale(1);
 }
 
+
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    justify-items: center;
+    width: 100%;
+}
+
+.course-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #1e212e;
+}
+
+.course-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-item a {
+    text-decoration: none;
+    color: #1e212e;
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.course-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
