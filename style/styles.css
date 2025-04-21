@@ -1291,3 +1291,63 @@ footer ul li a {
     text-decoration: underline;
     text-decoration-color: #f9c87b;
 }
+
+
+.video-section {
+    margin-bottom: 30px;
+  
+}
+
+.course-video{
+    border-radius: 40px;
+}
+
+
+.course-info {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.author-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.description, .skills, .course-conclusion {
+    margin-bottom: 30px;
+}
+
+.description h2, .skills h2, .course-conclusion h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #1e212e;
+}
+
+.description p, .course-conclusion p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.skills ul {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
