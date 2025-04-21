@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Scholar's Lore</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-image">
+           
+        </div>
+        <div class="login-form">
+            <h2>LOGIN</h2>
+            <form onsubmit="validateLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <small id="username-error" class="error-message"></small>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <small id="password-error" class="error-message"></small>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
