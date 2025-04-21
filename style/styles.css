@@ -1246,3 +1246,25 @@ footer ul li a {
     margin-bottom: 10px;
     display: none; /* Hidden by default */
 }
+
+/* Responsive Design  For Login Page*/
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .login-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
