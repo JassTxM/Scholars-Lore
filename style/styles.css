@@ -1268,3 +1268,26 @@ footer ul li a {
         object-fit: cover;
     }
 }
+
+
+/* General Styling for Course Page */
+
+
+.course-container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #1e212e;
+}
+
+.course-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e212e;
+    text-decoration: underline;
+    text-decoration-color: #f9c87b;
+}
