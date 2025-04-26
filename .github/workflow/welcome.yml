@@ -1,0 +1,27 @@
+name: Welcome new contributors
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome new Pull Request
+        if: github.event_name == 'pull_request_target'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🎉 Thank you @${{ github.actor }} for your first Pull Request! We're excited to have your contribution! 🚀
+
+      - name: Welcome new Issue
+        if: github.event_name == 'issues'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            👋 Hi @${{ github.actor }}! Thanks for opening your first issue. Our team will look into it shortly!
