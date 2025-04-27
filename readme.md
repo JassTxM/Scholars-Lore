@@ -88,8 +88,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🔗 Links
 
 - [GitHub Repository](#)
-- **Live Demo**: *Coming soon*
+- **Live Demo**: [Scholar's Lore](https://scholars-lore.vercel.app/)
 
 ---
 
-Happy Learning! 🚀
+Happy Coding! 🚀
