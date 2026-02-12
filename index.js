@@ -15,7 +15,7 @@ import url from 'url';
 
 
 const app = express();
-const port = 3000;
+const port = parseInt(process.env.PORT) ||3000;
 const saltRounds = 10;
 env.config();
 
@@ -27,6 +27,10 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
+    cookie: {
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 1000 * 60 * 60 * 24,
+    },
   })
 );
 
@@ -40,24 +44,23 @@ const config = {
   host: process.env.PG_HOST,
   port: parseInt(process.env.PG_PORT) || 5432,
   database: process.env.PG_DATABASE,
-  // ssl: {
-  //     rejectUnauthorized: true,
-  //     ca: process.env.PG_CERTIFY,
-  // },
+  ssl: {
+      rejectUnauthorized: false,
+  },
 };
 
-const sql = new pg.Client(config);
-sql.connect(function (err) {
-  if (err)
-      throw err;
-  sql.query("SELECT VERSION()", [], function (err, result) {
-      if (err)
-          throw err;
-
-      console.log(result.rows[0].version);
-  });
+const sql = new pg.Pool(config);
+sql.query("SELECT VERSION()", (err, result) => {
+  if (err) {
+    console.error("Database connection error:", err.message);
+  } else {
+    console.log("Database Connected. Version:", result.rows[0].version);
+  }
 });
 
+sql.on('error', (err) => {
+  console.error('Unexpected error on idle database client', err);
+});
 
 app.get("/", (req, res) => {
   res.render("main.ejs", { title: "Scholar's Lore - Home", pageTitle: "Scholar's Lore" });
@@ -107,7 +110,7 @@ app.get("/help-center", (req, res) => {
   res.render("help-center.ejs", { title: "Scholar's Lore - Help Center", pageTitle: "HELP CENTER" });
 });
 
-app.get("/logout", (req, res) => {
+app.get("/logout", (req, res,next) => {
   req.logout(function (err) {
     if (err) {
       return next(err);
@@ -301,7 +304,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/auth/google/sl_redirect",
+      callbackURL: process.env.GOOGLE_CALLBACK_URL,
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
     async (accessToken, refreshToken, profile, cb) => {
